@@ -1,2 +1,2 @@
-# Devopslive10 -Assighnment 1
+# Devopslive10 -Assignment 1
 ## Part 1
