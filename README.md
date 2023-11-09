@@ -41,6 +41,24 @@ Step 5 : push to Docker Hub
   - docker image tag unicorn:v1  rollymaan/assignmet-1:v1
   - docker image push rollymaan/assignmet-1:v1
 
+  -logs
+root@dice-devops:/home/mnt# docker image push rollymaan/assignmet-1:v1
+The push refers to repository [docker.io/rollymaan/assignmet-1]
+b9938b613e16: Pushed
+ba92b2b49794: Pushed
+afd9d9141103: Pushed
+10696ce43656: Pushed
+28c8061a5629: Mounted from library/python
+b3ed152d6340: Mounted from library/python
+db97787423d8: Mounted from library/python
+86e50e0709ee: Mounted from library/python
+12b956927ba2: Mounted from library/python
+266def75d28e: Mounted from library/python
+29e49b59edda: Mounted from library/python
+1777ac7d307b: Mounted from library/python
+v1: digest: sha256:03b6328fa51551a3858823bd61d81c0c7fb999ea4ae5bdc8007714c17271917a size: 2847
+ 
+
 ```
   - https://hub.docker.com/repository/docker/rollymaan/assignmet-1/general
 
