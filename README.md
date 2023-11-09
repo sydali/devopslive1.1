@@ -47,9 +47,6 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/sydali/devopslive1.1.git
    b177277..6c866a8  main -> main
 root@dice-devops:/home/devopslive10/devopslive1.1# ll
-
-
-
 root@dice-devops:/home/devopslive10/devopslive1.1# nano Dockerfile
 root@dice-devops:/home/devopslive10/devopslive1.1# git commit -m "changes"^C
 root@dice-devops:/home/devopslive10/devopslive1.1# git config --global alias.add-commit '!git add -A && git commit'
