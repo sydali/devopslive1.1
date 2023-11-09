@@ -9,6 +9,11 @@ Step 2: Dependencies
   - uvicorn webserver library for python
   - python langauge
   - fastapi library for Python
+
+Step 3: Fiel Uploaded 
+
+Step 2:  Build
+  -  docker buildx build -t unicorn  -f Dockerfile .
     
 
 
