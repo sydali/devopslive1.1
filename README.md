@@ -16,9 +16,12 @@ Step 4:  Build
   -  docker buildx build -t unicorn  -f Dockerfile .
     
 Step 5 : push to Docker Hub
+  ```
   - docker container commit bf21445dcf84  unicorn:v1
   - docker image tag unicorn:v1  rollymaan/assignmet-1:v1
   - docker image push rollymaan/assignmet-1:v1
+
+```
   - https://hub.docker.com/repository/docker/rollymaan/assignmet-1/general
 
 Step 6 : Git Hub repository
@@ -28,7 +31,7 @@ Step 7 : Readme.md
   - This file
 
 
-Step 7 : Push to GitHub
+Step 8 : Push to GitHub
 
 ```
 root@dice-devops:/home/devopslive10/devopslive1.1# git add main.py
