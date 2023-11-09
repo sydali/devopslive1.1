@@ -22,6 +22,7 @@ Step 5 : push to Docker Hub
   - https://hub.docker.com/repository/docker/rollymaan/assignmet-1/general
 
 Step 6 : Git Hub repository
+- https://github.com/sydali/devopslive1.1/tree/main
     
 
 
