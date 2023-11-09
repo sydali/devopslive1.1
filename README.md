@@ -14,7 +14,27 @@ Step 3: Fiel Uploaded
 
 Step 4:  Build
   -  docker buildx build -t unicorn  -f Dockerfile .
-    
+ ```
+root@dice-devops:/home# docker buildx build -t unicorn  -f Dockerfile .
+[+] Building 2.5s (10/10) FINISHED                                                                                                                                                                                                             docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                     0.1s
+ => => transferring dockerfile: 158B                                                                                                                                                                                                                     0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                        0.1s
+ => => transferring context: 2B                                                                                                                                                                                                                          0.0s
+ => [internal] load metadata for docker.io/library/python:3.8                                                                                                                                                                                            2.3s
+ => [auth] library/python:pull token for registry-1.docker.io                                                                                                                                                                                            0.0s
+ => [1/4] FROM docker.io/library/python:3.8@sha256:7a82536f5a2895b70416ccaffc49e6469d11ed8d9bf6bcfc52328faeae7c7710                                                                                                                                      0.0s
+ => [internal] load build context                                                                                                                                                                                                                        0.0s
+ => => transferring context: 503B                                                                                                                                                                                                                        0.0s
+ => CACHED [2/4] RUN apt-get update                                                                                                                                                                                                                      0.0s
+ => CACHED [3/4] RUN pip install fastapi uvicorn                                                                                                                                                                                                         0.0s
+ => [4/4] COPY main.py main.py                                                                                                                                                                                                                           0.0s
+ => exporting to image                                                                                                                                                                                                                                   0.0s
+ => => exporting layers                                                                                                                                                                                                                                  0.0s
+ => => writing image sha256:3496bfbb605ecbab47d1625047c482612cc8303f245638a0f13a8208d3f26234                                                                                                                                                             0.0s
+ => => naming to docker.io/library/unicorn                                                                                                                                                                                                               0.0s
+
+ ```  
 Step 5 : push to Docker Hub
   ```
   - docker container commit bf21445dcf84  unicorn:v1
